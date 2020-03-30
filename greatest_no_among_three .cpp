@@ -3,7 +3,11 @@ using namespace std;
 class addition
 {
   private:
-    int a,b,c,k;
+    int a;
+    int &A=a;
+    int b;
+    int &B=b;
+    int c,k;
   public:
     void userinput(void);
     void getoutput(void);
@@ -12,16 +16,16 @@ class addition
 };
 void addition:: userinput(void){
     cout<<"eneter the value of first no:"<<"\n";
-    cin>>a;
+    cin>>A;
     cout<<"enter the value of second no:"<<"\n";
-    cin>>b;
+    cin>>B;
     cout<<"enter the value of  third no:"<<"\n";
     cin>>c;
 
 }
 void addition:: getoutput(void)
 {
-    k=a>b? a>c?a:c :b>c?b:c;
+    k=A>B? A>c?A:c :B>c?B:c;
     cout<<"the greatest no in between of given no. is:"<<"\n"<<k;
 
 }
