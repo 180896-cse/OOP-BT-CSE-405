@@ -4,6 +4,7 @@ class addition
 {
   private:
     int a,b,sum;
+    int &opera=sum;
   public:
     void userinput(void);
     void getoutput(void);
@@ -19,8 +20,8 @@ void addition:: userinput(void){
 }
 void addition:: getoutput(void)
 {
-    sum=a+b;
-    cout<<"the addittion for the given no is:"<<"\n"<<sum;
+    opera=a+b;
+    cout<<"the addittion for the given no is:"<<"\n"<<opera;
 
 }
 int main()
